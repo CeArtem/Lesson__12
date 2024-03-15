@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery DOM</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // 1
+    $('#addHtmlt').html('<h1>New Element</h1>');
+    
+    // 2
+    $('.className').hide();
+    
+    // 3
+    $('section').remove();
+    
+    // 4
+    $('div').addClass('addClass').text('Lumos Maxima');
+});
+</script>
+<style>
+.addClass {
+    background: #f66668;
+    border-radius: 50% 0 50% 0;
+    width: 200px;
+    height: 120px;
+    line-height: 80px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div id="addHtmlt"></div>
+<div class="className">Цей div буде сховано</div>
+<section>Цей section буде прибрано</section>
+<div></div>
+
+</body>
+</html>
